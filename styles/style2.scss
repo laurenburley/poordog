@@ -1,53 +1,42 @@
 body{
-  font-family: 'GT America Mono', sans-serif;
-  font-weight: 700;
-  margin: 0;
-  background: #f8f8f8;
-  // background: #282828;
+  background: #000;
 }
 
 .container{
-  position: relative;
-  width: 610px;
-  height: 987px;
-  overflow: hidden;
+  background: #fff;
+  padding: 5px;
   box-sizing: border-box;
-  margin: 55px auto;
 }
 
-.text-root{
-  position: absolute;
-  margin: 0;
-}
 p{
+  font-size: 10px;
+  letter-spacing: -0.02em;
   margin: 0;
+  width: 34vw;
+  word-wrap: break-word;
 }
 
-@mixin fib($num){
-  $a: 1;
-  $b: 1;
-  @for $i from $num through 1{
-    $temp: $b;
-    $b: $a + $temp;
-    $a: $temp;
+pre{
+  display: inline-block;
+  font-size: 10px;
+  width: 100%;
+  font-family: 'GT America Mono', sans-serif;
+  white-space: pre-wrap;
+  margin: 0;
+  letter-spacing: -0.07em;
+  opacity: 0;
+  margin-bottom: 89px;
+  &:hover{
+    opacity: 1;
   }
-  font-size: #{$a}px;
-  line-height: #{$a/1.614}px;
-  letter-spacing: #{$a*0.05}px;
 }
 
 span{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: 900;
-
-  @for $i from 21 through 1{
-    &:nth-of-type(#{$i}){
-      $one-percent: (100 / 21) / 100;
-      opacity: #{$one-percent * $i};
-
-      @include fib(22 - $i);
-    }
+  display: block;
+  &:nth-of-type(odd){
+    opacity: 0.75;
+  }
+  &:nth-of-type(even){
+    opacity: 0.5;
   }
 }

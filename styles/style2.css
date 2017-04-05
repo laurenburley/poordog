@@ -1,133 +1,36 @@
 body {
-  font-family: 'GT America Mono', sans-serif;
-  font-weight: 700;
-  margin: 0;
-  background: #f8f8f8; }
+  background: #000; }
 
 .container {
-  position: relative;
-  width: 610px;
-  height: 987px;
-  overflow: hidden;
-  box-sizing: border-box;
-  margin: 55px auto; }
-
-.text-root {
-  position: absolute;
-  margin: 0; }
+  background: #fff;
+  padding: 5px;
+  box-sizing: border-box; }
 
 p {
-  margin: 0; }
+  font-size: 10px;
+  letter-spacing: -0.02em;
+  margin: 0;
+  width: 34vw;
+  word-wrap: break-word; }
+
+pre {
+  display: inline-block;
+  font-size: 10px;
+  width: 100%;
+  font-family: 'GT America Mono', sans-serif;
+  white-space: pre-wrap;
+  margin: 0;
+  letter-spacing: -0.07em;
+  opacity: 0;
+  margin-bottom: 89px; }
+  pre:hover {
+    opacity: 1; }
 
 span {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: 900; }
-  span:nth-of-type(21) {
-    opacity: 1;
-    font-size: 1px;
-    line-height: 0.61958px;
-    letter-spacing: 0.05px; }
-  span:nth-of-type(20) {
-    opacity: 0.95238;
-    font-size: 2px;
-    line-height: 1.23916px;
-    letter-spacing: 0.1px; }
-  span:nth-of-type(19) {
-    opacity: 0.90476;
-    font-size: 3px;
-    line-height: 1.85874px;
-    letter-spacing: 0.15px; }
-  span:nth-of-type(18) {
-    opacity: 0.85714;
-    font-size: 5px;
-    line-height: 3.09789px;
-    letter-spacing: 0.25px; }
-  span:nth-of-type(17) {
-    opacity: 0.80952;
-    font-size: 8px;
-    line-height: 4.95663px;
-    letter-spacing: 0.4px; }
-  span:nth-of-type(16) {
-    opacity: 0.7619;
-    font-size: 13px;
-    line-height: 8.05452px;
-    letter-spacing: 0.65px; }
-  span:nth-of-type(15) {
-    opacity: 0.71429;
-    font-size: 21px;
-    line-height: 13.01115px;
-    letter-spacing: 1.05px; }
-  span:nth-of-type(14) {
-    opacity: 0.66667;
-    font-size: 34px;
-    line-height: 21.06568px;
-    letter-spacing: 1.7px; }
-  span:nth-of-type(13) {
-    opacity: 0.61905;
-    font-size: 55px;
-    line-height: 34.07683px;
-    letter-spacing: 2.75px; }
-  span:nth-of-type(12) {
-    opacity: 0.57143;
-    font-size: 89px;
-    line-height: 55.1425px;
-    letter-spacing: 4.45px; }
-  span:nth-of-type(11) {
-    opacity: 0.52381;
-    font-size: 144px;
-    line-height: 89.21933px;
-    letter-spacing: 7.2px; }
-  span:nth-of-type(10) {
-    opacity: 0.47619;
-    font-size: 233px;
-    line-height: 144.36183px;
-    letter-spacing: 11.65px; }
-  span:nth-of-type(9) {
-    opacity: 0.42857;
-    font-size: 377px;
-    line-height: 233.58116px;
-    letter-spacing: 18.85px; }
-  span:nth-of-type(8) {
-    opacity: 0.38095;
-    font-size: 610px;
-    line-height: 377.943px;
-    letter-spacing: 30.5px; }
-  span:nth-of-type(7) {
-    opacity: 0.33333;
-    font-size: 987px;
-    line-height: 611.52416px;
-    letter-spacing: 49.35px; }
-  span:nth-of-type(6) {
-    opacity: 0.28571;
-    font-size: 1597px;
-    line-height: 989.46716px;
-    letter-spacing: 79.85px; }
-  span:nth-of-type(5) {
-    opacity: 0.2381;
-    font-size: 2584px;
-    line-height: 1600.99133px;
-    letter-spacing: 129.2px; }
-  span:nth-of-type(4) {
-    opacity: 0.19048;
-    font-size: 4181px;
-    line-height: 2590.45849px;
-    letter-spacing: 209.05px; }
-  span:nth-of-type(3) {
-    opacity: 0.14286;
-    font-size: 6765px;
-    line-height: 4191.44981px;
-    letter-spacing: 338.25px; }
-  span:nth-of-type(2) {
-    opacity: 0.09524;
-    font-size: 10946px;
-    line-height: 6781.9083px;
-    letter-spacing: 547.3px; }
-  span:nth-of-type(1) {
-    opacity: 0.04762;
-    font-size: 17711px;
-    line-height: 10973.35812px;
-    letter-spacing: 885.55px; }
+  display: block; }
+  span:nth-of-type(odd) {
+    opacity: 0.75; }
+  span:nth-of-type(even) {
+    opacity: 0.5; }
 
 /*# sourceMappingURL=style2.css.map */
