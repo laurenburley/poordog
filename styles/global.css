@@ -1,12 +1,14 @@
 body {
   font-family: 'GT America Mono', sans-serif;
-  font-weight: 900; }
+  font-weight: 900;
+  margin: 0; }
 
 .container {
   position: relative;
   width: 55vw;
   height: 89vw;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 55px auto; }
 
 @media print {
   .container {
