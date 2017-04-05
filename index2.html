@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Poor Dog Group 2</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="styles/style2.css" />
+</head>
+
+<body>
+<div class="container">
+  <p id="text-root"></p>
+</div>
+
+<script>
+  String.prototype.repeat = function(times) {
+    return (new Array(times + 1)).join(this);
+  };
+
+  var a = 1, b = 1;
+  var isN = true;
+  var root = document.getElementById("text-root");
+
+  for(var i = 0; i < 21; i++){
+    var text = isN ? "n" : "o";
+    root.innerHTML = root.innerHTML + "<span>" + text.repeat(a) + "</span>";
+    var temp = b; b = a + temp; a = temp;
+    isN = !isN;
+  }
+</script>
+</body>
+</html>

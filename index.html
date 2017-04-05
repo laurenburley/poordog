@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Poor Dog Group </title>
+
+  <style>
+
+    @font-face{
+      src: url('fonts/GT-America-Mono-Black-v1.otf');
+      font-family: 'GT America Mono';
+      font-weight: 900;
+    }
+    @font-face{
+      src: url('fonts/GT-America-Mono-Bold-v1.otf');
+      font-family: 'GT America Mono';
+      font-weight: 700;
+    }
+    @font-face{
+      src: url('fonts/GT-America-Mono-Medium-v1.otf');
+      font-family: 'GT America Mono';
+      font-weight: 500;
+    }
+    @font-face{
+      src: url('fonts/GT-America-Mono-Regular-v1.otf');
+      font-family: 'GT America Mono';
+      font-weight: 400;
+    }
+    @font-face{
+      src: url('fonts/GT-America-Mono-Light-v1.otf');
+      font-family: 'GT America Mono';
+      font-weight: 300;
+    }
+    @font-face{
+      src: url('fonts/GT-America-Mono-Ultra-Light-v1.otf');
+      font-family: 'GT America Mono';
+      font-weight: 200;
+    }
+
+    body{
+      font-family: 'GT America Mono', sans-serif;
+      font-weight: 700;
+      margin: 3px;
+    }
+
+    p{
+      font-size: 10px;
+      letter-spacing: -0.02em;
+      margin: 0;
+      width: 535px;
+      word-wrap: break-word;
+    }
+
+    pre{
+      display: inline-block;
+      font-size: 10px;
+      width: 100%;
+      font-family: 'GT America Mono', sans-serif;
+      white-space: pre-wrap;
+      margin: 0;
+      letter-spacing: -0.07em;
+      opacity: 1;
+      margin-bottom: 89px;
+    }
+
+    span{
+      display: block;
+      line-height: 1em;
+    }
+    span:nth-of-type(odd){
+      opacity: 0.75;
+    }
+    span:nth-of-type(even){
+      opacity: 0.5;
+    }
+    /*span:nth-of-type(1){
+      font-size: 144px;
+    }
+    span:nth-of-type(2){
+      font-size: 89px;
+    }
+    span:nth-of-type(3){
+      font-size: 55px;
+    }
+    span:nth-of-type(4){
+      font-size: 34px;
+    }
+    span:nth-of-type(5){
+      font-size: 21px;
+    }
+    span:nth-of-type(6){
+      font-size: 13px;
+    }
+    span:nth-of-type(7){
+      font-size: 8px;
+    }
+    span:nth-of-type(8){
+      font-size: 5px;
+    }
+    span:nth-of-type(9){
+      font-size: 3px;
+    }
+    span:nth-of-type(10){
+      font-size: 2px;
+    }*/
+  </style>
+
+
+</head>
+<body>
+
+  <p id="text-root"></p>
+
+  <script>
+    String.prototype.repeat = function(times) {
+      return (new Array(times + 1)).join(this);
+    };
+
+    var a = 1, b = 1;
+    var isN = true;
+    var root = document.getElementById("text-root");
+
+    for(var i=0; i<21; i++){
+      var text = isN ? "n" : "o";
+      root.innerHTML = root.innerHTML + "<span>" + text.repeat(a) + "</span>";
+      console.log(a);
+      var temp = b; b = a + temp; a = temp;
+      isN = !isN;
+    }
+
+    var code = '<pre>var a = 1, b = 1, isN = true; \nvar root = document.getElementById("text-root"); \nfor(var i=0; i<20; i++){ \n  var text = isN ? "n" : "o"; \n  root.innerHTML = root.innerHTML + "&lt;span&gt;" + text.repeat(a) + "&lt;/span&gt;"; \n  var temp = b; b = a + temp; a = temp; \n  isN = !isN; \n} </pre>';
+
+    root.innerHTML = code + root.innerHTML;
+  </script>
+</body>
+</html>

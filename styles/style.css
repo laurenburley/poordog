@@ -1,0 +1,95 @@
+body {
+  font-family: 'GT America Mono', sans-serif;
+  font-weight: 700;
+  margin: 3px; }
+
+p {
+  font-size: 10px;
+  letter-spacing: -0.02em;
+  margin: 0;
+  width: 420px;
+  word-wrap: break-word; }
+
+pre {
+  display: inline-block;
+  font-size: 10px;
+  width: 100%;
+  font-family: 'GT America Mono', sans-serif;
+  white-space: pre-wrap;
+  margin: 0;
+  letter-spacing: -0.07em;
+  opacity: 0.25;
+  margin-bottom: 89px; }
+
+span {
+  position: absolute;
+  left: 0; }
+  span:nth-of-type(odd) {
+    opacity: 0.2; }
+  span:nth-of-type(even) {
+    opacity: 0.2; }
+  span:nth-of-type(21) {
+    font-size: 1px;
+    line-height: 0em; }
+  span:nth-of-type(20) {
+    font-size: 2px;
+    line-height: 0em; }
+  span:nth-of-type(19) {
+    font-size: 3px;
+    line-height: 0em; }
+  span:nth-of-type(18) {
+    font-size: 5px;
+    line-height: 0em; }
+  span:nth-of-type(17) {
+    font-size: 8px;
+    line-height: 0em; }
+  span:nth-of-type(16) {
+    font-size: 13px;
+    line-height: 0em; }
+  span:nth-of-type(15) {
+    font-size: 21px;
+    line-height: 0em; }
+  span:nth-of-type(14) {
+    font-size: 34px;
+    line-height: 0em; }
+  span:nth-of-type(13) {
+    font-size: 55px;
+    line-height: 0em; }
+  span:nth-of-type(12) {
+    font-size: 89px;
+    line-height: 0em; }
+  span:nth-of-type(11) {
+    font-size: 144px;
+    line-height: 0em; }
+  span:nth-of-type(10) {
+    font-size: 233px;
+    line-height: 0em; }
+  span:nth-of-type(9) {
+    font-size: 377px;
+    line-height: 0em; }
+  span:nth-of-type(8) {
+    font-size: 610px;
+    line-height: 0em; }
+  span:nth-of-type(7) {
+    font-size: 987px;
+    line-height: 0em; }
+  span:nth-of-type(6) {
+    font-size: 1597px;
+    line-height: 0em; }
+  span:nth-of-type(5) {
+    font-size: 2584px;
+    line-height: 0em; }
+  span:nth-of-type(4) {
+    font-size: 4181px;
+    line-height: 0em; }
+  span:nth-of-type(3) {
+    font-size: 6765px;
+    line-height: 0em; }
+  span:nth-of-type(2) {
+    font-size: 10946px;
+    line-height: 0em; }
+  span:nth-of-type(1) {
+    font-size: 17711px;
+    line-height: 0em; }
+
+/*# sourceMappingURL=style.css.map */

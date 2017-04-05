@@ -1,0 +1,54 @@
+body{
+  font-family: 'GT America Mono', sans-serif;
+  font-weight: 700;
+  margin: 3px;
+}
+
+p{
+  font-size: 10px;
+  letter-spacing: -0.02em;
+  margin: 0;
+  width: 420px;
+  word-wrap: break-word;
+}
+
+pre{
+  display: inline-block;
+  font-size: 10px;
+  width: 100%;
+  font-family: 'GT America Mono', sans-serif;
+  white-space: pre-wrap;
+  margin: 0;
+  letter-spacing: -0.07em;
+  opacity: 0.25;
+  margin-bottom: 89px;
+}
+
+@mixin fib($num){
+  $a: 1;
+  $b: 1;
+  @for $i from $num through 1{
+    $temp: $b;
+    $b: $a + $temp;
+    $a: $temp;
+  }
+  font-size: #{$a}px;
+  line-height: 0em;
+}
+span{
+  position: absolute;
+  left: 0;
+
+  &:nth-of-type(odd){
+    opacity: 0.2;
+  }
+  &:nth-of-type(even){
+    opacity: 0.2;
+  }
+
+  @for $i from 21 through 1{
+    &:nth-of-type(#{$i}){
+      @include fib(22 - $i);
+    }
+  }
+}
